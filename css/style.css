@@ -1,16 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root{
   --primary:#081c63;
   --secondary:#ff5a1f;
+  --dark-blue: #ebf6fd54;
   --white:#ffffff;
   --text:#1e293b;
   --border:#e5e7eb;
-
   --radius:20px;
-
   --shadow:
     0 10px 30px rgba(0,0,0,.08);
-
   --container:
     1280px;
 }
@@ -689,6 +689,310 @@ justify-content: center;
 /* ==========
    COMPARISON
 ========== */
+/* Main Layout Container */
+.comparison-section {
+    margin: 0 auto;
+}
+
+.comparison-wrapper {
+    margin: 0 auto;
+    background-color: var(--dark-blue);
+    border-radius: 12px;
+    padding: 28px 20px;
+}
+
+/* Typography & Headings */
+.main-heading {
+    text-align: center;
+    color: #0B1A30;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 56px;
+}
+
+.highlight-orange {
+    color: #FF4F18;
+    position: relative;
+    display: inline-block;
+}
+
+.heading-underline {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background-color: #FF4F18;
+    border-radius: 2px;
+}
+
+/* Comparison Grid Structure */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    gap: 32px;
+    align-items: stretch;
+    margin-bottom: 48px;
+}
+
+/* Standard Columns/Cards Custom CSS */
+.card {
+    border-radius: 15px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.traditional-card {
+    background-color: #FFF5F5;
+    border: 1px solid #FFE3E3;
+}
+
+.recommendation-card {
+    background-color: #F4F9F5;
+    border: 1px solid #E1EFE5;
+}
+
+.card-title {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+
+.traditional-title {
+    color: #C52222;
+}
+
+.recommendation-title {
+    color: #166534;
+}
+
+/* Lists */
+.icon-list {
+    list-style: none;
+}
+
+.list-item {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.list-text {
+    color: #2D3748;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.icon-cross {
+    color: #C52222;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.icon-check-wrapper {
+    background-color: #166534;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #ffffff;
+}
+
+/* Footers inside cards */
+.card-footer {
+    font-size: 14px;
+    margin-top: 32px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.traditional-footer {
+    border-top: 1px solid #FFE3E3;
+}
+
+.recommendation-footer {
+    border-top: 1px solid #E1EFE5;
+}
+
+.footer-bold-text {
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 2px;
+}
+
+/* Central VS Images Module */
+.vs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.brightness-dark {
+    filter: brightness(0.75);
+}
+
+.brightness-light {
+    filter: brightness(0.85);
+}
+
+.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(transparent));
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+}
+
+/* Splitter "vs." Element */
+.vs-splitter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    color: var(--secondary);
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Image Badges */
+.badge {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.badge-hours {
+    color: #C52222;
+    border: 1px solid #FFE3E3;
+    box-shadow: 0 8px 20px rgba(197, 34, 34, 0.12);
+}
+
+.badge-minutes {
+    color: #166534;
+    border: 1px solid #E1EFE5;
+    box-shadow: 0 8px 20px rgba(22, 101, 52, 0.12);
+}
+
+.badge-text {
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Statistics Layout (Bottom Grid) */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding-top: 32px;
+    border-top: 1px solid #F1F5F9;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.stat-icon-container {
+    background-color: #EBF2FC;
+    color: #2F6ED5;
+    padding: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.top-info {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-number {
+    color: #0B1A30;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.stat-description {
+    color: #5A6A85;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.text-bold-dark {
+    color: #0B1A30;
+    font-weight: 700;
+}
+
+.stat-source {
+    color: #94A3B8;
+    font-size: 11px;
+    display: block;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+
 
 
 /* ==========
@@ -778,6 +1082,38 @@ justify-content: center;
   .amount {
     font-size: 56px;
   }
+
+   /* comparison section */
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+      .main-card {
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .main-heading {
+        font-size: 26px;
+        margin-bottom: 36px;
+    }
+
+    .vs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .image-wrapper {
+        height: 280px;
+    }
+
+    .vs-splitter {
+        display: none;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
 
 
@@ -831,4 +1167,15 @@ justify-content: center;
       .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+    /* comparison section */
+        .stat-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .stat-icon-container {
+        margin-bottom: 8px;
+    }
 }
