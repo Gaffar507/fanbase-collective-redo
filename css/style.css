@@ -444,18 +444,13 @@ ul{
     align-items:center;
     justify-content:center;
     gap:10px;
-
     background: var(--primary);
     color: var(--white);
-
     height:40px;
     border-radius:10px;
-
     font-size:16px;
     font-weight:700;
-
     text-decoration:none;
-
     transition:.3s;
 }
 
@@ -1714,16 +1709,8 @@ ul{
         margin-bottom: 36px;
     }
 
-    .vs-container {
-        grid-template-columns: 1fr;
-    }
-
     .image-wrapper {
         height: 280px;
-    }
-
-    .vs-splitter {
-        display: none;
     }
 
     .stats-grid {
@@ -1879,6 +1866,14 @@ ul{
 .amount {
   font-size: 38px;
 }
+
+/* comparison section */
+    .top-info {
+        flex-direction: column;
+    }
+    .top-info .stat-number {
+        font-size: 30px;
+    }
 
 }
 
