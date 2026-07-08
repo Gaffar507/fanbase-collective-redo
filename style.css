@@ -1913,6 +1913,14 @@ ul {
 }
 
 @media (max-width: 790px) {
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .hero-grid > div:first-child { order: 2; }
+  .hero-grid > div:last-child { order: 1; }
+
   .why-main-title {
   font-size: 36px;
 }
@@ -1923,6 +1931,11 @@ ul {
 }
 
 @media (max-width: 640px) {
+  .hero-section {
+    padding-block: 20px 0; 
+    margin-bottom: 20px;
+  }
+  
   .results-grid {
     grid-template-columns: 1fr; 
     gap: 40px 0px;
