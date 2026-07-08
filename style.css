@@ -805,7 +805,7 @@ ul {
 
 /* ========= Plan section end =========*/
 
-/* ======= Why it matters section start =======*/
+/* ======= Why it works section start =======*/
 
 .why-it-works-section {
   padding-block: 40px;
@@ -1913,6 +1913,10 @@ ul {
 }
 
 @media (max-width: 790px) {
+  .why-main-title {
+  font-size: 36px;
+}
+
   .pricing-grid {
     grid-template-columns: repeat(2, 1fr); 
   }
@@ -1928,6 +1932,10 @@ ul {
     display: none !important; 
   }
   
+  .why-main-title {
+  font-size: 32px;
+}
+
   /* success section */
   .card-feature-title {
     min-height: auto;
