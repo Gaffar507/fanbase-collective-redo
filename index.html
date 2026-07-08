@@ -23,422 +23,864 @@
     />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <nav class="navbar">
-          <div class="navbar-logo">
-            <a href="/" >
-            <img src="./assets/images/logo.webp" alt="Fanbase Collective" />
-          </a>
-          </div>
-
-          <ul class="nav-menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#slowing_down_report">Customers Slowing Down Report</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><button class="btn btn-login">Login</button></li>
-          </ul>
-
-          <a href="#" class="btn btn-primary">
-            View Plans and Sign Up
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M5 12H19M19 12L12 5M19 12L12 19"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              /></svg
-          ></a>
-
-          <button class="menu-toggle" aria-label="Toggle Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </nav>
+    <!-- Header Starts -->
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="/">
+        <img src="./assets/images/logo.svg" alt="fanbage collective logo" />
+          <div class="logo-text">Fanbase <br> <span>Collective</span>  </div>
+        </a>
       </div>
-    </header>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <li><a href="/" >Platform <i class="fa-solid fa-chevron-down nav-arrow"></i></a></li>
+        <li><a href="/">Reports <i class="fa-solid fa-chevron-down nav-arrow"></i></a></li>
+        <li><a href="/">Industries <i class="fa-solid fa-chevron-down nav-arrow"></i></a></li>
+        <li><a href="/">Resources <i class="fa-solid fa-chevron-down nav-arrow"></i></a></li>
+        <li><a href="#price">Pricing</a></li>
+      </ul>
+
+      <!-- Right Actions (Login & CTA) -->
+      <div class="nav-actions">
+        <a href="#" class="nav-login-link">Login</a>
+        <button class="btn-primary">Connect Square</button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+    <!-- Header Ends -->
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container hero-wrapper">
-        <div class="hero-content">
+    <section class="hero-section">
+  <div class="container hero-grid">
+    
+    <!-- LEFT SIDE CONTENT -->
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Don’t Miss<br>the <span class="text-orange">Moment.</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Know who’s starting to miss visits before revenue slips away.
+      </h1>
 
-          <span class="hero-tagline">
-            Don't Miss The Moment.
-            <div class="tagline-decoration">
-              <svg width="430" height="20" viewBox="0 0 430 20">
-                <path
-                  d="M5 12 C 35 10, 60 14, 95 11"
-                  stroke="#FF5A1F"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  fill="none"
-                />
+      <div class="hero-desc-group">
+        <p class="hero-desc">
+          Run the <span class="text-orange-link">Customers Slowing Down report</span> to identify missed visits based on customer purchase history.
+        </p>
+        <p class="hero-desc">
+          Review weekly to catch changes early, or analyze monthly, quarterly, or any custom date range.
+        </p>
+      </div>
 
-                <path
-                  d="M320 11 C 355 14, 390 9, 425 12"
-                  stroke="#FF5A1F"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  fill="none"
-                />
+      <!-- Button Trigger Group -->
+      <div class="hero-cta-group">
+        <button class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-square-icon lucide-square-square"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+          Connect Square
+        </button>
+        
+        <button class="btn btn-outline-blue">
+          <span class="btn-play-icon">
+            <svg width="22" height="22" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.7"/>
+              <path d="M6.5 5.5L11 8L6.5 10.5V5.5Z" fill="currentColor"/>
+            </svg>
+          </span>
+          See How It Works
+        </button>
+      </div>
+
+      <!-- Trust Badge / Security Info -->
+      <div class="hero-security">
+        <svg class="lock-icon" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="5" width="10" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M3 5V3.5C3 2.11929 4.11929 1 5.5 1C6.88071 1 8 2.11929 8 3.5V5" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>100% secure. We only connect to Square.</span>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE IMAGE -->
+    <div class="hero-image-wrap">
+      <div class="hero-image-bg">
+        <img src="/assets/images/hero-image.webp" alt="Dashboard Analysis View" class="hero-main-img">
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- Hero Section -->
+
+
+    <!-- Problem Section -->
+<section class="problem-section">
+  <div class="container">
+    
+    <!-- Header Block -->
+    <div class="problem-header">
+      <span class="problem-tag">THE PROBLEM</span>
+      <h2 class="problem-title">
+        Your POS records every sale.<br>
+        <span class="text-orange">It never tells you who stopped coming.</span>
+      </h2>
+    </div>
+
+    <!-- 3-Column Features Grid -->
+    <div class="problem-grid">
+      
+      <!-- Card 1 -->
+      <div class="problem-card">
+        <div class="icon-shape">
+          <img src="/assets/icons/users.png" alt="users">
+        </div>
+        <p class="card-text">By the time you notice slower sales, many regular customers have already changed their habits.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="problem-card">
+        <div class="icon-shape">
+            <img src="/assets/icons/ration.png" alt="ration">
+        </div>
+        <p class="card-text">That’s where revenue quietly disappears.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="problem-card">
+        <div class="icon-shape">
+            <img src="/assets/icons/dollars-fall.png" alt="dollars fall">
+
+        </div>
+        <p class="card-text">Every missed visit starts small—and can become a big loss.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- Problem Section -->
+
+
+    <!-- Revenue risk section -->
+     <section class="revenue-risk-section">
+  <div class="container">
+    
+
+    <!-- MAIN CALCULATION BOX -->
+    <div class="risk-card-box">
+      <span class="risk-tag">REVENUE AT RISK RIGHT NOW</span>
+      
+      <!-- Top Grid: Left and Right Equation Block -->
+      <div class="equation-grid">
+        
+        <!-- LEFT EQUATION BLOCK -->
+        <div class="equation-block">
+          <div class="stat-item">
+            <div class="icon-circle bg-light-orange">
+              <!-- Orange Users Icon -->
+              <svg width="64" height="64" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="16" r="3.5" stroke="#FF5A1F" stroke-width="2"/>
+                <path d="M7 25C7 22.5 9 21.5 12 21.5" stroke="#FF5A1F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="27" cy="16" r="3.5" stroke="#FF5A1F" stroke-width="2"/>
+                <path d="M33 25C33 22.5 31 21.5 28 21.5" stroke="#FF5A1F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="20" cy="14" r="5" stroke="#FF5A1F" stroke-width="2"/>
+                <path d="M12 28C12 24 15 22 20 22C25 22 28 24 28 28V29H12V28Z" stroke="#FF5A1F" stroke-width="2" stroke-linejoin="round"/>
               </svg>
             </div>
-          </span>
-
-          <h1>
-            Customers Don't  <br />
-            Disappear Overnight. <br />
-            <span class="hero-accent">
-              <span>They Slow Down First.</span>
-            </span>
-          </h1>
-
-          <div class="hero-description">
-            <p>
-              Most customers don't leave all at once. They visit less often. Then less often again. The Customers Slowing Down Report helps you spot those changes before they become lost revenue.
-            </p>
+            <div class="stat-info">
+              <h3 class="stat-number">315</h3>
+              <p class="stat-label">customers<br>off pattern</p>
+            </div>
           </div>
 
-          <div class="hero-features">
-            <ul class="hero-features-list">
-              <li>Identify declining visit patterns</li>
-              <li>Understand revenue at risk</li>
-              <li>Take action to win customers back</li>
-            </ul>
-              <a href="#" class="btn btn-primary hero-slowdown-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-square-icon lucide-square-square"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
-            Run Customer Slowdown Report
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M5 12H19M19 12L12 5M19 12L12 19"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              /></svg
-          ></a>
+          <div class="math-operator">×</div>
 
-          <span class="hero-secure-info"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="12" height="12" viewBox="0 0 24 24">
-    <path d="M 12 1 C 8.6761905 1 6 3.6761905 6 7 L 6 8 C 4.9 8 4 8.9 4 10 L 4 20 C 4 21.1 4.9 22 6 22 L 18 22 C 19.1 22 20 21.1 20 20 L 20 10 C 20 8.9 19.1 8 18 8 L 18 7 C 18 3.6761905 15.32381 1 12 1 z M 12 3 C 14.27619 3 16 4.7238095 16 7 L 16 8 L 8 8 L 8 7 C 8 4.7238095 9.7238095 3 12 3 z M 12 13 C 13.1 13 14 13.9 14 15 C 14 16.1 13.1 17 12 17 C 10.9 17 10 16.1 10 15 C 10 13.9 10.9 13 12 13 z"></path>
-</svg> Secure Square connection. Your data is never shared.</span>
+          <div class="stat-item start-item-wrap">
+            <div class="icon-circle icon-circle-badge bg-light-blue shadow-glow">
+              <span class="currency-value">$36</span>
+            </div>
+            <div class="stat-info">
+              <p class="stat-label mt-label">average<br>visit</p>
+            </div>
+          </div>
+
+          <div class="math-operator">=</div>
+
+          <div class="stat-item">
+            <div class="stat-info">
+              <h3 class="stat-number text-orange-bold">$11,300</h3>
+              <p class="stat-label">monthly revenue<br>at risk</p>
+            </div>
           </div>
         </div>
 
+        <!-- RIGHT EQUATION BLOCK -->
+        <div class="equation-block">
+          <div class="stat-item">
+            <div class="icon-circle bg-light-orange">
+              <!-- Orange User Plus Icon -->
+              <svg width="64" height="64" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="15" r="5" stroke="#FF5A1F" stroke-width="2"/>
+                <path d="M10 29C10 25 13 23 18 23C21.5 23 24.2 24.2 25.4 26" stroke="#FF5A1F" stroke-width="2" stroke-linecap="round"/>
+                <path d="M30 14H36M33 11V17" stroke="#FF5A1F" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number">52</h3>
+              <p class="stat-label">more customers<br>off pattern<br>each month</p>
+            </div>
+          </div>
 
-<!-- Right side report card -->
+          <div class="math-operator">×</div>
 
-<div class="hero-right-section">
-  <div class="report-card">
-    <h2 class="report-title">CUSTOMERS SLOWING DOWN REPORT</h2>
-    
-    <div class="stats-grid">
-      <div class="stat-box">
-        <span class="stat-label">Customers Visiting Less Often</span>
-        <div class="stat-value text-dark-blue">
-          <span>173</span>
-          <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-          </svg>
+          <div class="stat-item start-item-wrap">
+            <div class="icon-circle icon-circle-badge bg-light-blue shadow-glow">
+              <span class="currency-value">$36</span>
+            </div>
+            <div class="stat-info">
+              <p class="stat-label mt-label">average<br>visit</p>
+            </div>
+          </div>
+
+          <div class="math-operator">=</div>
+
+          <div class="stat-item">
+            <div class="stat-info">
+              <h3 class="stat-number text-orange-bold">+$1,900</h3>
+              <p class="stat-label">growing every<br>month</p>
+            </div>
+          </div>
         </div>
-        <span class="stat-unit">Customers</span>
+
       </div>
 
-      <div class="stat-box">
-        <span class="stat-label">Revenue At Risk</span>
-        <div class="stat-value text-orange">
-          <span>$17,310</span>
-          <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.854-1.106-2.24 0-3.093 1.15-.89 3.016-.89 4.166 0 .443.343.647.746.762 1.14M12 3v3m0 12v3" />
+      <!-- BOTTOM WARNING ALERT BAR -->
+      <div class="risk-bottom-alert">
+        <div class="warning-icon-wrap">
+          <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 3L2 23H26L14 3Z" stroke="#FF5A1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 10V15" stroke="#FF5A1F" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="14" cy="19" r="1.25" fill="#FF5A1F"/>
           </svg>
         </div>
-        <span class="stat-unit">Potential Revenue</span>
+        <div class="alert-text-group">
+          <p class="alert-primary">$11,300 is at risk now. It grows by ~$1,900 every month.</p>
+          <p class="alert-secondary">Left alone, it can become a $650 annual loss per customer.</p>
+        </div>
       </div>
 
-      <div class="stat-box">
-        <span class="stat-label">At Risk On Average Per Customer</span>
-        <div class="stat-value text-blue">
-          <span>$100.06</span>
-          <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.94M3.75 21h16.5" />
-          </svg>
-        </div>
-        <span class="stat-unit">On average</span>
-      </div>
     </div>
 
-    <div class="table-container">
-      <table class="report-table">
-        <thead>
-          <tr>
-            <th>CUSTOMER</th>
-            <th>USUAL PATTERN</th>
-            <th>CURRENT PATTERN</th>
-            <th>RISK LEVEL</th>
-            <th class="text-right">REVENUE AT RISK</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="user-info">
-                <div class="avatar bg-placeholder">
-                  <img src="./assets/images/customer 1.png" alt="customer profile">
-                </div>
-                <span class="user-name">Sarah M.</span>
-              </div>
-            </td>
-            <td>Every Friday</td>
-            <td>No visit in 18 days</td>
-            <td><span class="badge badge-high">High</span></td>
-            <td class="text-right text-danger font-semibold">$540</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="user-info">
-                <div class="avatar bg-placeholder">
-                                    <img src="./assets/images/customer 2.png" alt="customer profile">
-                </div>
-                <span class="user-name">James T.</span>
-              </div>
-            </td>
-            <td>2x per month</td>
-            <td>No visit in 45 days</td>
-            <td><span class="badge badge-medium">Medium</span></td>
-            <td class="text-right text-danger font-semibold">$240</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="user-info">
-                <div class="avatar bg-placeholder">
-                                    <img src="./assets/images/customer 1.png" alt="customer profile">
-                </div>
-                <span class="user-name">Amanda R.</span>
-              </div>
-            </td>
-            <td>Every Saturday</td>
-            <td>Missed 2 Saturdays</td>
-            <td><span class="badge badge-high">High</span></td>
-            <td class="text-right text-danger font-semibold">$900</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="user-info">
-                <div class="avatar bg-placeholder">
-                                    <img src="./assets/images/customer 2.png" alt="customer profile">
-                </div>
-                <span class="user-name">Michael B.</span>
-              </div>
-            </td>
-            <td>Weekly</td>
-            <td>No visit in 21 days</td>
-            <td><span class="badge badge-medium">Medium</span></td>
-            <td class="text-right text-danger font-semibold">$390</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="user-info">
-                <div class="avatar bg-placeholder">
-                                    <img src="./assets/images/customer 1.png" alt="customer profile">
-                </div>
-                <span class="user-name">Jennifer L.</span>
-              </div>
-            </td>
-            <td>2x per month</td>
-            <td>No visit in 40 days</td>
-            <td><span class="badge badge-low">Low</span></td>
-            <td class="text-right text-success font-semibold">$150</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- <div class="report-footer">
-      <span class="counter-text">Showing top 5 of 173 customers</span>
-      <a href="#" class="view-report-link">
-        <span>View Full Report</span>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-        </svg>
-      </a>
-    </div> -->
   </div>
-</div>
-      </div>
 </section>
+    <!-- Revenue risk section -->
 
-<!-- Report Section -->
-  <section class="engine-container container">
-    <div class="container">
 
-    <div class="engine-header">
-      <h2>The Engine Behind The Report</h2>
-      <p>We use proven logic to surface the customers who matter most.</p>
+    <!-- Plan section -->
+  <section class="plan-section">
+  <div class="container plan-container">
+    
+    <!-- LEFT CONTENT AREA -->
+    <div class="plan-left-content">
+      <span class="plan-sub-tag">THE GUIDE</span>
+      <h2 class="plan-main-title">See what<br>your POS can't.</h2>
+      <p class="plan-description">
+        The Customers Slowing Down report compares every customer against their own purchase history to identify <span style="font-weight: 900;">missed visits while they're still recoverable.</span> 
+      </p>
     </div>
 
-    <div class="formula-wrapper">
+    <!-- RIGHT STEPS FLOW AREA -->
+    <div class="plan-right-steps">
+      <span class="plan-steps-tag">THE PLAN — FOUR SIMPLE STEPS</span>
       
-      <div class="card">
-        <div class="icon-wrapper icon-orange">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9V3.577c0-.516-.213-.986-.554-1.324A1.993 1.993 0 0014.535 1.75H9.464c-.536 0-1.02.213-1.357.554A1.993 1.993 0 007.553 3.577V12c0 4.97 2.015 9 4.447 9z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v3.75m0 2.25h.008v.008H12V14.25z" />
+      <div class="steps-wrapper">
+        
+        <!-- STEP 1 -->
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <div class="step-icon-circle">
+            <!-- Square POS Style Icon -->
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4H20V20H4V4Z" stroke="#030F26" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M9 9H15V15H9V9Z" stroke="#030F26" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="step-title">Connect Square</h4>
+          <p class="step-desc">Import your customer purchase history in minutes.</p>
+        </div>
+
+        <div class="step-arrow">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 1L15 6L10 11M1 6H15H1" stroke="#1A66FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h3 class="title-orange">Risk</h3>
-        <p>How much their visit frequency has declined compared to their normal pattern.</p>
-      </div>
 
-      <div class="operator">+</div>
+        <!-- STEP 2 -->
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <div class="step-icon-circle">
+            <!-- Bar Analytics Chart Icon -->
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 19V15M10 19V9M15 19V12M20 19V6" stroke="#030F26" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="step-title">Run Customers Slowing Down</h4>
+          <p class="step-desc">Identify customers whose visit patterns are changing.</p>
+        </div>
 
-      <div class="card">
-        <div class="icon-wrapper icon-blue">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <div class="step-arrow">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 1L15 6L10 11M1 6H15H1" stroke="#1A66FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h3 class="title-blue">Inactivity</h3>
-        <p>How long it's been since their last visit compared to their typical behavior.</p>
-      </div>
 
-      <div class="operator">+</div>
-
-      <div class="card">
-        <div class="icon-wrapper icon-orange">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+        <!-- STEP 3 -->
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <div class="step-icon-circle">
+            <!-- Audience/Users Group Icon -->
+              <svg width="44" height="44" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="16" r="3.5" stroke="#030F26" stroke-width="2"/>
+                <path d="M7 25C7 22.5 9 21.5 12 21.5" stroke="#030F26" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="27" cy="16" r="3.5" stroke="#030F26" stroke-width="2"/>
+                <path d="M33 25C33 22.5 31 21.5 28 21.5" stroke="#030F26" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="20" cy="14" r="5" stroke="#030F26" stroke-width="2"/>
+                <path d="M12 28C12 24 15 22 20 22C25 22 28 24 28 28V29H12V28Z" stroke="#030F26" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+          </div>
+          <h4 class="step-title">Create an Audience</h4>
+          <p class="step-desc">Turn the report into a live audience that stays up to date.</p>
         </div>
-        <h3 class="title-orange">Revenue Logic</h3>
-        <p>How much value they bring to your business when they are active.</p>
-      </div>
 
-      <div class="operator">=</div>
-
-      <div class="card">
-        <div class="icon-wrapper icon-orange">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+        <div class="step-arrow">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 1L15 6L10 11M1 6H15H1" stroke="#1A66FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h3 class="title-orange">Customers At Risk</h3>
-        <p>A prioritized list of customers with the highest revenue at risk right now.</p>
+
+        <!-- STEP 4 -->
+        <div class="step-card">
+          <div class="step-badge">4</div>
+          <div class="step-icon-circle">
+            <!-- Paper Airplane Icon -->
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 3L3 10.5L10.5 13.5L13.5 21L21 3Z" stroke="#030F26" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="step-title">Send the Campaign</h4>
+          <p class="step-desc">Reconnect customers with the right message at the right time.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- Plan section -->
+
+
+  <!-- Why it matters section -->
+<section class="why-it-works-section">
+  <div class="container why-container">
+    
+    <!-- LEFT SIDE: TITLES & CHECK LIST -->
+    <div class="why-left-content">
+      <span class="why-sub-tag">WHY IT WORKS</span>
+      <h2 class="why-main-title">Every customer<br>has a different rhythm.</h2>
+      
+      <ul class="why-check-list">
+        <li>
+          <span class="check-icon">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="7" fill="#FF5A1F"/>
+              <path d="M4.5 7L6 8.5L9.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          Some visit every week.
+        </li>
+        <li>
+          <span class="check-icon">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="7" fill="#FF5A1F"/>
+              <path d="M4.5 7L6 8.5L9.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          Some every month.
+        </li>
+        <li>
+          <span class="check-icon">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="7" fill="#FF5A1F"/>
+              <path d="M4.5 7L6 8.5L9.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          Some every quarter.
+        </li>
+      </ul>
+    </div>
+
+    <!-- RIGHT SIDE: PULSE CARD BOX -->
+    <div class="why-right-box">
+      <div class="pulse-icon-wrap">
+        <!-- Orange Rhythm/Pulse Wave Icon -->
+        <svg width="84" height="84" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 24H14L18 10L24 38L29 17L33 24H42" stroke="#FF5A1F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <p class="pulse-box-text">
+        Fanbase Collective doesn't guess. It compares every customer to their own buying history, so you know when their normal behavior changes.
+      </p>
+    </div>
+
+  </div>
+</section>
+  <!-- Why it matters section -->
+
+  <!-- Email result section -->
+<section class="email-results-section">
+  <div class="container text-center">
+    
+    <!-- HEADER BLOCK -->
+    <div class="results-header">
+      <span class="results-tag">PERSONALIZED EMAILS THAT DRIVE RESULTS</span>
+      <h2 class="results-title">Every customer receives a different email.</h2>
+    </div>
+
+    <!-- 6-COLUMN GRID BOX -->
+    <div class="results-card-box">
+      <div class="results-grid">
+        
+        <!-- COLUMN 1: Personalized Recommendations -->
+        <div class="result-card">
+          <div class="icon-circle-thumb bg-blue-tint">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A66FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+          <h4 class="card-feature-title">Personalized Recommendations</h4>
+          <p class="card-feature-desc">Products they'll love.</p>
+        </div>
+
+        <!-- COLUMN 2: Best Sellers -->
+        <div class="result-card">
+          <div class="icon-circle-thumb bg-orange-tint">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FF5A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+            </svg>
+          </div>
+          <h4 class="card-feature-title">Best Sellers</h4>
+          <p class="card-feature-desc">Highlight what's popular now.</p>
+        </div>
+
+        <!-- COLUMN 3: Frequently Bought Together -->
+        <div class="result-card">
+          <div class="icon-circle-thumb bg-green-tint">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+          </div>
+          <h4 class="card-feature-title">Frequently Bought Together</h4>
+          <p class="card-feature-desc">Increase their order value.</p>
+        </div>
+
+        <!-- COLUMN 4: Customers Also Bought -->
+        <div class="result-card">
+          <div class="icon-circle-thumb bg-purple-tint">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h4 class="card-feature-title">Customers Also Bought</h4>
+          <p class="card-feature-desc">Show what others love too.</p>
+        </div>
+
+        <!-- COLUMN 5: Lapsed Customers -->
+        <div class="result-card">
+          <div class="icon-circle-thumb bg-deeporange-tint">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h4 class="card-feature-title">Lapsed Customers</h4>
+          <p class="card-feature-desc">Win back inactive customers.</p>
+        </div>
+
+        <!-- COLUMN 6: Seasonal Campaigns -->
+        <div class="result-card">
+          <div class="icon-circle-thumb bg-red-tint">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+              <path d="M12 6a6 6 0 0 0-6 6c0 3.5 3 6 6 8 3-2 6-4.5 6-8a6 6 0 0 0-6-6z" />
+            </svg>
+          </div>
+          <h4 class="card-feature-title">Seasonal Campaigns</h4>
+          <p class="card-feature-desc">Timely offers that convert.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- Email result section -->
+
+  <!-- Success section -->
+<section class="success-section">
+  <div class="container">
+    
+    <!-- MAIN SUCCESS CARD CONTAINER -->
+    <div class="success-card-box">
+      
+      <!-- LEFT SIDE: TITLE -->
+      <div class="success-left-content">
+        <span class="success-sub-tag">THE SUCCESS</span>
+        <h2 class="success-main-title">Know who’s changing<br><span class="text-orange">before</span> revenue disappears.</h2>
+      </div>
+
+      <!-- RIGHT SIDE: 6 STEP WORKFLOW -->
+      <div class="success-right-flow">
+        
+        <!-- STEP 1: Calendar -->
+        <div class="flow-step">
+          <div class="flow-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#030F26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+              <circle cx="7" cy="14" r="1" fill="#08074bda"></circle>
+              <circle cx="12" cy="14" r="1" fill="#08074bda"></circle>
+              <circle cx="17" cy="14" r="1" fill="#08074bda"></circle>
+              <circle cx="7" cy="18" r="1" fill="#08074bda"></circle>
+              <circle cx="12" cy="18" r="1" fill="#08074bda"></circle>
+              <circle cx="17" cy="18" r="1" fill="#08074bda"></circle>
+            </svg>
+          </div>
+          <p class="flow-desc">Review the<br>report weekly</p>
+        </div>
+
+        <div class="flow-arrow">&gt;</div>
+
+        <!-- STEP 2: Target/Bullseye -->
+        <div class="flow-step">
+          <div class="flow-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#08074bda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+              <line x1="22" y1="2" x2="16" y2="8"></line>
+              <polyline points="18 2 22 2 22 6"></polyline>
+            </svg>
+          </div>
+          <p class="flow-desc">Spot missed<br>visits early</p>
+        </div>
+
+        <div class="flow-arrow">&gt;</div>
+
+        <!-- STEP 3: Create Audience (Users Group) -->
+        <div class="flow-step">
+          <div class="flow-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#08074bda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M5.5 21v-2a4 4 0 0 1 4-4h5a4 4 0 0 1 4 4v2"></path>
+              <circle cx="3" cy="9" r="2"></circle>
+              <path d="M1 14v-1a2 2 0 0 1 2-2h1"></path>
+              <circle cx="21" cy="9" r="2"></circle>
+              <path d="M19 11h1a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </div>
+          <p class="flow-desc">Create an<br>audience</p>
+        </div>
+
+        <div class="flow-arrow">&gt;</div>
+
+        <!-- STEP 4: Send Campaign (Paper Airplane) -->
+        <div class="flow-step">
+          <div class="flow-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#08074bda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </div>
+          <p class="flow-desc">Send the right<br>campaign</p>
+        </div>
+
+        <div class="flow-arrow">&gt;</div>
+
+        <!-- STEP 5: Measure Revenue (Bar Analytics Chart) -->
+        <div class="flow-step">
+          <div class="flow-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1A66FF" stroke-width="2" stroke-linecap="round">
+              <path d="M6 20V15M11 20V9M16 20V13M21 20V6" />
+            </svg>
+          </div>
+          <p class="flow-desc">Measure<br>recovered revenue</p>
+        </div>
+
+        <div class="flow-arrow">&gt;</div>
+
+        <!-- STEP 6: Repeat (Sync/Rotate) -->
+        <div class="flow-step">
+          <div class="flow-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#08074bda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg>
+          </div>
+          <p class="flow-desc">Repeat and grow<br>revenue every week</p>
+        </div>
+
       </div>
 
     </div>
+    
+  </div>
+</section>
+  <!-- Success section -->
 
-    <div class="engine-footer">
-      <p>This engine helps you focus on the customers where the <span class="highlight">impact</span> is greatest.</p>
+  <!-- Trust bar section -->
+<section class="trust-bar-section">
+  <div class="container">
+    
+    <div class="trust-card-box">
+      <div class="trust-grid">
+        
+        <div class="trust-item">
+          <div class="trust-icon-wrap text-blue">
+            <svg width="44" height="44" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L3 6V12C3 17.55 6.84 22.74 12 24C17.16 22.74 21 17.55 21 12V6L12 2Z" stroke="#1A66FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 7V17M9 10H15M9 14H15" stroke="#1A66FF" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="trust-info">
+            <p class="trust-text"><strong>Built for restaurants</strong> <br> and local businesses <br> that depend on <br> repeat customers.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="4" stroke="#030F26" stroke-width="3"/>
+              <rect x="8" y="8" width="8" height="8" rx="1.5" stroke="#030F26" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <div class="trust-info">
+            <p class="trust-text"><strong>Connects securely</strong> <br> to Square <span class="highlight-blue">100%</span></p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="11" width="18" height="11" rx="2" stroke="#030F26" stroke-width="2"/>
+              <path d="M7 11V7C7 4.24 9.24 2 12 2C14.76 2 17 4.24 17 7V11" stroke="#030F26" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="12" cy="16" r="1.5" fill="#030F26"/>
+            </svg>
+          </div>
+          <div class="trust-info">
+            <p class="trust-text"><strong>Data is yours.</strong> <br> We don't share <br> <strong>or sell your data.</strong> </p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div>
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="#FF9F1C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <div class="trust-info no-gap-top">
+            <p class="trust-text mb-4"><strong>Trusted by restaurants <br> across the country.</strong></p>
+            <div class="rating-stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FF9F1C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FF9F1C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FF9F1C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FF9F1C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FF9F1C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- Trust bar section -->
+
+
+  <!-- Pricing section -->
+   <section class="pricing-section" id="price">
+  <div class="container text-center">
+    
+    <div class="pricing-header">
+      <h2 class="pricing-section-title">SIMPLE PRICING THAT GROWS WITH YOU</h2>
+    </div>
+
+    <div class="pricing-grid">
+      
+      <div class="price-card theme-spark">
+        <h3 class="plan-name">SPARK</h3>
+        <div class="plan-price">$59 <span class="period">/mo</span></div>
+        <ul class="plan-features">
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            250 contacts
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Up to 1,250 emails/mo
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            3 preset reports
+          </li>
+        </ul>
+        <a href="#" class="btn-action">Start Now</a>
+      </div>
+
+      <div class="price-card theme-launch">
+        <h3 class="plan-name">LAUNCH</h3>
+        <div class="plan-price">$99 <span class="period">/mo</span></div>
+        <ul class="plan-features">
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            500 contacts
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Up to 2,500 emails/mo
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            5 preset reports
+          </li>
+        </ul>
+        <a href="#" class="btn-action">Start Now</a>
+      </div>
+
+      <div class="price-card theme-starter">
+        <h3 class="plan-name">STARTER</h3>
+        <div class="plan-price">$249 <span class="period">/mo</span></div>
+        <ul class="plan-features">
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            1,500 contacts
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Up to 15,000 emails/mo
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            10 preset reports
+          </li>
+        </ul>
+        <a href="#" class="btn-action">Start Now</a>
+      </div>
+
+      <div class="price-card theme-grow">
+        <h3 class="plan-name">GROW</h3>
+        <div class="plan-price">$499 <span class="period">/mo</span></div>
+        <ul class="plan-features">
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            5,000 contacts
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Up to 50,000 emails/mo
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            15 preset reports
+          </li>
+        </ul>
+        <a href="#" class="btn-action">Start Now</a>
+      </div>
+
+      <div class="price-card theme-scale">
+        <h3 class="plan-name">SCALE</h3>
+        <div class="plan-price">$999 <span class="period">/mo</span></div>
+        <ul class="plan-features">
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            15,000 contacts
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Up to 150,000 emails/mo
+          </li>
+          <li>
+            <svg class="green-check" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4 8L11 1" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            25 preset reports
+          </li>
+        </ul>
+        <a href="#" class="btn-action">Start Now</a>
+      </div>
+
     </div>
   </div>
-  </section>
+</section>
+  <!-- Pricing section -->
 
-  <!-- Insight & why it matters section -->
-<section class="sections-container container">
-    
-    <div class="insight-box section-card">
-      <div class="section-header">
-        <h2>Turn Insight Into Action</h2>
-        <p>Find them. Reach out. Win them back.</p>
-      </div>
-
-      <div class="action-flow">
-        <div class="flow-item">
-          <div class="circle-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0zM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632zM21 21l-3.5-3.5" />
-            </svg>
-          </div>
-          <h3>Identify</h3>
-          <p>Find customers who are slowing down.</p>
-        </div>
-
-        <div class="flow-arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-          </svg>
-        </div>
-
-        <div class="flow-item">
-          <div class="circle-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="paper-plane">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-            </svg>
-          </div>
-          <h3>Reach Out</h3>
-          <p>Send the right message at the right time.</p>
-        </div>
-
-        <div class="flow-arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-          </svg>
-        </div>
-
-        <div class="flow-item">
-          <div class="circle-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h2.25A1.125 1.125 0 014.125 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-            </svg>
-          </div>
-          <h3>Win Them Back</h3>
-          <p>Track return visits and recovered revenue.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="matters-box section-card">
-      <div class="section-header">
-        <h2>Why It Matters</h2>
-        <p>Small changes in customer behavior lead to big revenue loss over time.</p>
-      </div>
-
-      <div class="comparison-grid">
-        <div class="list-card border-red">
-          <h4 class="text-red">Without Insight</h4>
-          <ul class="status-list list-red">
-            <li><span>Changes happen</span></li>
-            <li><span>Nobody notices</span></li>
-            <li><span>Revenue declines</span></li>
-            <li><span>You react later</span></li>
-            <li><span>Customer is gone</span></li>
-          </ul>
-        </div>
-
-        <div class="list-card border-green">
-          <h4 class="text-green">With Insight</h4>
-          <ul class="status-list list-green">
-            <li><span>Changes happen</span></li>
-            <li><span>Report identifies</span></li>
-            <li><span>You take action</span></li>
-            <li><span>Customer returns</span></li>
-            <li><span>Revenue protected</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </section>
 
   <!-- CTA section start -->
-<section class="cta-banner container">
+<section class="cta-bar-section">
+  <div class="container">
     
-    <div class="cta-left">
-      <div class="graph-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.94M3.75 21h16.5" />
-        </svg>
-      </div>
+    <div class="cta-bar-box">
       
+      <div class="cta-left-block">
+        <div class="cta-mail-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" stroke="#FF5A1F" stroke-width="2.5"/>
+            <path d="M7 9L11.1161 12.0871C11.642 12.4815 12.358 12.4815 12.8839 12.0871L17 9" stroke="#FF5A1F" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="cta-title">Your best customer<br>probably isn't gone.</h3>
+      </div>
+
+      <div class="cta-middle-block">
+        <p class="cta-desc">
+          Run the Customers Slowing Down report.<br>See who's changing. Recover revenue.
+        </p>
+      </div>
+
+      <div class="cta-right-buttons">
+        <button class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-square-icon lucide-square-square"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+          Connect Square
+        </button>
+        
+        <button class="btn btn-outline-blue">
+          <span class="btn-play-icon">
+            <svg width="22" height="22" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.7"/>
+              <path d="M6.5 5.5L11 8L6.5 10.5V5.5Z" fill="currentColor"/>
+            </svg>
+          </span>
+          See How It Works
+        </button>
+      </div>
+
     </div>
 
-    <div class="cta-right">
-          <h2>DON’T JUST FIND AT RISK CUSTOMERS. REACH THEM.</h2>
-          <p>The Customers Slowdown Report helps identify customers whose visit patterns are changing. Fanbase Collective then helps you create recommendation email campaigns to encourage customers to return.</p>
-    </div>
-
-  </section>
+  </div>
+</section>
   <!-- CTA section end -->
 
   <!-- Footer section Start -->
@@ -447,9 +889,23 @@
     <div class="footer-top">
       
       <div class="footer-brand">
-        <div class="brand-logo">
-            <img src="./assets/images/footer-logo.png" alt="fanbage collective logo">
-        </div>
+      <!-- Logo -->
+      <div class="navbar-logo navbar-logo-footer">
+        <a href="/">
+        <svg width="24" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="14" width="3.5" height="7" rx="1.75" fill="#FFFFFF"/>
+  
+  <rect x="8" y="9" width="3.5" height="12" rx="1.75" fill="#FFFFFF"/>
+  
+  <rect x="14" y="6" width="3.5" height="2.5" rx="1.25" fill="#FFFFFF"/>
+  <rect x="14" y="11" width="3.5" height="10" rx="1.75" fill="#FFFFFF"/>
+  
+  <rect x="20" y="2" width="3.5" height="19" rx="1.75" fill="#FFFFFF"/>
+</svg>
+
+        <div class="logo-text">Fanbase <br> <span>Collective</span>  </div>
+        </a>
+      </div>
         <p class="brand-desc">
           Actionable customer insights that help you understand behavior, protect revenue, and grow stronger relationships.
         </p>
@@ -459,7 +915,7 @@
         <div class="links-column">
           <h3>Product</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#customerslowingdown">Customer Slowing Down</a></li>
             <li><a href="#pricing">Pricing</a></li>
           </ul>
